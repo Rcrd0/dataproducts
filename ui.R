@@ -20,7 +20,9 @@ shinyUI(pageWithSidebar(
     ),
     mainPanel(
         h4('Theoretical distribution vs simulation Results'), 
-        p('This application plots the average of n exponentials and compares its distribution to the one predicted by the Central Limit Theorem'),       
+        p('This application plots the average of n exponentials and compares its distribution to the one predicted by the Central Limit Theorem'),
+        p('Please, use the controls on the left to select the sample size, lambda value and number of simulations'),
+        p('Then click on Plot Results! to see how the average of n exponentials (n = sample size) compares to a normal distribution'),
         plotOutput('OutChart')
     )
 ))
